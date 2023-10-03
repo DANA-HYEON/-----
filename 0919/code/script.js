@@ -53,9 +53,8 @@ const filterMemo = memo => {
 
     Array.from(list.children)
         .filter((memotext) => !memotext.textContent.includes(memo))
-        // 검색창에 입력된 내용들을 인지하기 시작할 겁니다.
+        //     // 검색창에 입력된 내용들을 인지하기 시작할 겁니다.
         .forEach((memotext) => memotext.classList.add('filtered'));
-
 
 
     Array.from(list.children)
